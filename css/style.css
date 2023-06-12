@@ -15,9 +15,11 @@ body{
 }
 
 h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
+h2{font-size: 2.7em;
+text-align: center;}
 h3{font-size: 2em;}
-p{font-size: 1.25em;}
+p{font-size: 1.25em;
+text-align: center;}
 ul{list-style: none;}
 li{font-size: 1.25em;}
 
@@ -148,44 +150,45 @@ button:hover{
 }
 
 /*Enlace Sobre nosotros*/
-  .contenido {
-    padding: 20px;
-    color: black;
+.Nosotros {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 5px;
+}
+
+.Nosotros img {
+  width: 250px;
+}
+
+@media (max-width: 480px) {
+  .Nosotros {
+    padding: 0;
   }
-  .equipo {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+
+  .image {
+    margin-bottom: 10px; 
   }
-  
-  .miembro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
+  img {
+    border-radius: 0; 
   }
-  
-  .miembro img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+
+  .Nosotros img {
+    width: 100%;
   }
-  
-  @media (min-width: 768px) {
-    .contenido {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .contenido {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+}
 
   /*Lanzamientos*/
   release {
