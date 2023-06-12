@@ -188,27 +188,32 @@ button:hover{
   }
 
   /*Lanzamientos*/
-.lanzamientos-container {
+  release {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .lanzamiento {
-    flex-basis: 300px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    margin-bottom: 20px;
   }
   
-  .lanzamiento img {
-    width: 100%;
+  .release img {
+    width: 200px;
     height: auto;
-    margin-bottom: 10px;
+    margin-right: 10px;
   }
   
+  .release .info {
+    flex: 1;
+  }
+  
+  .release .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .release .description {
+    color: #666;
+  }
+
+
   /*derechos de autor*/
  footer{
     background-color: #2874A6;
